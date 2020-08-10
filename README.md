@@ -18,11 +18,11 @@ $ javac -d ./build --module-path=$FX_LIB --add-modules=javafx.controls src/*.jav
 
 Finally create a .jar package:
 ```
-cd build
-jar cvfm TetrisFX.jar ../src/Manifest.txt *
+$ cd build
+$ jar cvfm TetrisFX.jar ../src/Manifest.txt *
 ```
 
 Now you can run application using created **TetrisFX.jar** file:
 ```
-java --module-path=$FX_LIB --add-modules=javafx.controls -jar TetrisFX.jar
+$ java --module-path=$FX_LIB --add-modules=javafx.controls -jar TetrisFX.jar
 ```
